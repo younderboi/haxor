@@ -1,0 +1,1 @@
+sudo nc -lnvp 5000
